@@ -1,6 +1,6 @@
 {
   "name": "react-native-update-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This packages provides a customizable update overlay. ",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -48,11 +48,17 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "app-update",
+    "force-update",
+    "version",
+    "app-upgrade",
+    "force-upgrade",
+    "version-update"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zersys/react-native-update-helper.git.git"
+    "url": "git+https://github.com/zersys/react-native-update-helper.git"
   },
   "author": "Zersys <marina@zersys.com> (https://github.com/marina-zersys)",
   "license": "MIT",
