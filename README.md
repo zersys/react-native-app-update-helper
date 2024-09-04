@@ -72,6 +72,8 @@ Remember to install the pod with:
 npm pod install
 ```
 
+✨ Note: The package supports only [semantic](https://semver.org/) type of versioning.
+
 ## Usage
 
 Begin by importing the package into your screen to start using it.
