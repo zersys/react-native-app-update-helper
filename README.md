@@ -1,4 +1,4 @@
-<img src="/demos/intro.png" alt="React Native Update Helper" width="100%">
+<img src="./demos/intro.png" alt="React Native Update Helper" width="100%">
 
 # React Native Update Helper
 
@@ -6,11 +6,11 @@
 
 ![Build Test](https://github.com/zersys/react-native-update-helper/actions/workflows/main.yml/badge.svg?event=push&branch=master)
 [![MIT License][license-badge]][license]
-[![Version](https://img.shields.io/npm/v/react-native-update-helper-test)](https://www.npmjs.com/package/react-native-update-helper)
+[![Version](https://img.shields.io/npm/v/react-native-update-helper)](https://www.npmjs.com/package/react-native-update-helper)
 
 A customizable package designed to efficiently manage app update notifications across iOS and Android platforms. It automates app version fetching from PlayStore/AppStore to prompt users for optional and mandatory updates. Plus, you can add an optional "What's New" overlay to keep users informed about the latest features and changes.
 
-<img src="/demos/demo.png" alt="React Native Update Helper" width="100%">
+<img src="./demos/demo.png" alt="React Native Update Helper" width="100%">
 
 ## Motivation
 
@@ -48,7 +48,7 @@ Inspired by the need for a seamless, cross-platform solution, this package helps
 - **Branding**: Tailor the overlays to match your app's look and feel.
 - **Flexibility**: Adjust colors, fonts, and layout to suit your style.
 
-<img src="/demos/options.png" alt="React Native Update Helper Options" width="100%">
+<img src="./demos/options.png" alt="React Native Update Helper Options" width="100%">
 
 ## Installation
 
