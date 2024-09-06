@@ -9,6 +9,8 @@ jest.mock('@react-native-async-storage/async-storage', () =>
   require('@react-native-async-storage/async-storage/jest/async-storage-mock')
 );
 
+const STORED_VERSION_UPDATE_KEY = 'nDUM3KXAwqQDR9KA';
+
 const setup = (props) => {
   return render(<ManualUpdateOverlay {...props} />);
 };
@@ -50,7 +52,7 @@ describe('ManualUpdateOverlay', () => {
 
     await waitFor(() => {
       expect(AsyncStorage.setItem).toHaveBeenCalledWith(
-        'storedVersion',
+        STORED_VERSION_UPDATE_KEY,
         '1.1.0'
       );
     });
@@ -97,7 +99,7 @@ describe('ManualUpdateOverlay', () => {
 
     await waitFor(() => {
       expect(AsyncStorage.setItem).toHaveBeenCalledWith(
-        'storedVersion',
+        STORED_VERSION_UPDATE_KEY,
         '1.1.0'
       );
     });
