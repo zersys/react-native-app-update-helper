@@ -1,6 +1,6 @@
 {
-  "name": "react-native-update-helper",
-  "version": "1.0.4",
+  "name": "react-native-app-update-helper",
+  "version": "1.0.5",
   "description": "This packages provides a customizable update overlay. ",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -37,7 +37,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-update-helper-example",
+    "example": "yarn workspace react-native-app-update-helper-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -58,14 +58,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zersys/react-native-update-helper.git"
+    "url": "git+https://github.com/zersys/react-native-app-update-helper.git"
   },
   "author": "Zersys <marina@zersys.com> (https://github.com/marina-zersys)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zersys/react-native-update-helper.git/issues"
+    "url": "https://github.com/zersys/react-native-app-update-helper.git/issues"
   },
-  "homepage": "https://github.com/zersys/react-native-update-helper.git#readme",
+  "homepage": "https://github.com/zersys/react-native-app-update-helper.git#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
