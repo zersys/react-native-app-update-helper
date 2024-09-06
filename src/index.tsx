@@ -59,6 +59,9 @@ interface ManualUpdateOverlayProps {
 const { width } = Dimensions.get('window');
 const alert = require('./alertImage.png');
 
+const AVAILABLE_UPDATE_STORAGE_KEY = 'o2bY6kS6bTUAFNZD';
+const STORED_VERSION_UPDATE_KEY = 'nDUM3KXAwqQDR9KA';
+
 export const AutoUpdateOverlay = ({
   currentVersion,
   iosStoreLink,
@@ -112,11 +115,11 @@ export const AutoUpdateOverlay = ({
           if (currentPart < latestPart) {
             if (i == 2) {
               const shown = await getStoredValue({
-                storageTag: 'availableUpdate',
+                storageTag: AVAILABLE_UPDATE_STORAGE_KEY,
               });
               if (shown == null) {
                 await storeValue({
-                  storageTag: 'availableUpdate',
+                  storageTag: AVAILABLE_UPDATE_STORAGE_KEY,
                   valueToStore: 'shown',
                 });
                 setIsUpdateAvailable(true);
@@ -167,11 +170,11 @@ export const AutoUpdateOverlay = ({
           if (currentPart < latestPart) {
             if (i == 2) {
               const shown = await getStoredValue({
-                storageTag: 'availableUpdate',
+                storageTag: AVAILABLE_UPDATE_STORAGE_KEY,
               });
               if (shown == null) {
                 await storeValue({
-                  storageTag: 'availableUpdate',
+                  storageTag: AVAILABLE_UPDATE_STORAGE_KEY,
                   valueToStore: 'shown',
                 });
                 setIsUpdateAvailable(true);
@@ -235,14 +238,14 @@ export const AutoUpdateOverlay = ({
   const checkIfUserUpdated = async () => {
     try {
       const storedVersion = await getStoredValue({
-        storageTag: 'storedVersion',
+        storageTag: STORED_VERSION_UPDATE_KEY,
       });
       if (storedVersion !== null) {
         if (storedVersion == currentVersion) {
           setIsAppUpdated(false);
         } else {
           await storeValue({
-            storageTag: 'storedVersion',
+            storageTag: STORED_VERSION_UPDATE_KEY,
             valueToStore: currentVersion,
           });
 
@@ -255,7 +258,7 @@ export const AutoUpdateOverlay = ({
         }
       } else {
         await storeValue({
-          storageTag: 'storedVersion',
+          storageTag: STORED_VERSION_UPDATE_KEY,
           valueToStore: currentVersion,
         });
       }
@@ -472,14 +475,14 @@ export const ManualUpdateOverlay = ({
   const checkIfUserUpdated = async () => {
     try {
       const storedVersion = await getStoredValue({
-        storageTag: 'storedVersion',
+        storageTag: STORED_VERSION_UPDATE_KEY,
       });
       if (storedVersion !== null) {
         if (storedVersion == currentVersion) {
           setIsAppUpdated(false);
         } else {
           await storeValue({
-            storageTag: 'storedVersion',
+            storageTag: STORED_VERSION_UPDATE_KEY,
             valueToStore: currentVersion,
           });
 
@@ -492,7 +495,7 @@ export const ManualUpdateOverlay = ({
         }
       } else {
         await storeValue({
-          storageTag: 'storedVersion',
+          storageTag: STORED_VERSION_UPDATE_KEY,
           valueToStore: currentVersion,
         });
       }
