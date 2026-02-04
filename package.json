@@ -1,6 +1,6 @@
 {
   "name": "react-native-app-update-helper",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This packages provides a customizable update overlay. ",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
